@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import BharatAssets from "./BharatAssets"; // MUST match filename exactly
-import BharatAdmin from "./BharatAdmin";   // MUST match filename exactly
+import BharatAssets from "./BharatAssets"; // Capital B and A
+import BharatAdmin from "./BharatAdmin";   // Capital B and A
 
-function App() {
+export default function App() {
   return (
     <BrowserRouter>
       <Routes>
@@ -12,5 +12,3 @@ function App() {
     </BrowserRouter>
   );
 }
-
-export default App;
