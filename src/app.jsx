@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import BharatAssets from "./BharatAssets"; // Your website file
-import BharatAdmin from "./BharatAdmin";   // Your admin file
+import BharatAssets from "./BharatAssets.jsx"; // Your website file
+import BharatAdmin from "./BharatAdmin.jsx";   // Your admin file
 
 function App() {
   return (
