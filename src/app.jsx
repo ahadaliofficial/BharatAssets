@@ -1,15 +1,12 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import BharatAssets from "./BharatAssets.jsx"; // Your website file
-import BharatAdmin from "./BharatAdmin.jsx";   // Your admin file
+import BharatAssets from "./BharatAssets"; // MUST match filename exactly
+import BharatAdmin from "./BharatAdmin";   // MUST match filename exactly
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        {/* The main website link */}
         <Route path="/" element={<BharatAssets />} />
-        
-        {/* The secret admin link */}
         <Route path="/admin" element={<BharatAdmin />} />
       </Routes>
     </BrowserRouter>
