@@ -320,7 +320,6 @@ const GlobalStyles = () => (
       line-height: 1.75; margin-bottom: 40px; max-width: 500px;
     }
     .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 56px; }
-    .hero-stats { display: flex; gap: 40px; padding-top: 32px; border-top: 1px solid rgba(255,255,255,0.12); }
     .hero-stat-val {
       font-family: 'Poppins', sans-serif;
       font-size: 30px; font-weight: 800; color: white;
@@ -1313,15 +1312,6 @@ const HeroSection = ({ setPage }) => (
             <span>🧮</span> Calculate Returns
           </button>
         </div>
-        <div className="hero-stats animate-in animate-in-delay-4">
-          {[["₹240Cr+","Total AUM"], ["48,000+","Active Investors"], ["100%","Payout Rate"], ["₹890Cr+","Disbursed"]].map(([v, l]) => (
-            <div key={l}>
-              <div className="hero-stat-val">{v.includes("₹") ? <><span className="accent">{v}</span></> : v}</div>
-              <div className="hero-stat-lbl">{l}</div>
-            </div>
-          ))}
-        </div>
-      </div>
       <div className="animate-in animate-in-delay-2">
         <HeroCard />
       </div>
